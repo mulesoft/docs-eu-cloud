@@ -1,0 +1,19 @@
+= To Deploy an Application to CloudHub (EU Control Plane)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+The procedures for deploying an application to CloudHub in the EU control plane is similar to those in the US control plane. See xref:runtime-manager::deploying-to-cloudhub.adoc[Deploying to CloudHub].
+
+However, consider the following differences when deploying to the EU control plane.
+
+* The EU control plane supports a smaller number of  Mule runtimes than the US control plane.
+* The domain name of CloudHub workers is `<app_name>.de.eu1.cloudhub.io`.
+* You can only deploy to the Frankfurt or Dublin regions from the EU control plane.
+* Applications deployed to the EU control plane use Object Store v2.
+
+== See Also
+
+* xref:object-store-eu.adoc[About Object Store in the EU Control Plane]
+* xref:index.adoc[EU Control Plane]
+* xref:platform-access-eu.adoc[To Access the EU Control Plane]

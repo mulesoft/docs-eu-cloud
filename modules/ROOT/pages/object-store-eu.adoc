@@ -1,0 +1,15 @@
+= About Object Store in the EU Control Plane
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+The EU control plane uses Object Store V2. Mule applications that you create in the EU control plane use this version of Object Store by default. You do not have to modify any configuration in the platform or your application to use this version.
+
+Object Store V1 is not supported in the EU control plane.
+
+== See Also
+
+* xref:object-store::index.adoc[Anypoint Object Store V2]
+* xref:object-store::osv2-guide.adoc[To Use Object Store v2]
+* xref:object-store::osv2-apis.adoc[REST API: Object Store v2]
+* xref:index.adoc[EU Control Plane]

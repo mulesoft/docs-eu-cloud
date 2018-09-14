@@ -1,0 +1,27 @@
+= To Access the EU Control Plane
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+This topic describes how to access Anypoint Platform in the EU control plane.
+
+[NOTE]
+Anypoint Platform account data is not shared between the US and EU control planes. Even if you have an account in the US control plane, you must create a new account in the EU control plane.
+
+
+. Go to the following URL:
++
+----
+eu1.anypoint.mulesoft.com
+----
+
+. If you do not have an Anypoint Platform account in the EU control plane, click Sign Up.
+.. Enter your personal information. All fields are required.
+.. Choose a username.
+.. Choose a password, then click Create Account
+
+. Enter your username and password, then click Sign In.
+
+== See Also
+
+* xref:index.adoc[EU Control Plane]
