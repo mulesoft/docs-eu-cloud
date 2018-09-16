@@ -1,5 +1,5 @@
 name: eu-control-plane
 title: EU Control Plane
-version: master
+version: latest
 nav:
 - modules/ROOT/nav.adoc
