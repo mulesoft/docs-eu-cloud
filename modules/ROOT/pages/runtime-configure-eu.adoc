@@ -1,19 +1,19 @@
-= Configure the Mule Runtime to Connect to the EU Control Plane
+= Configure Mule runtime engine to Connect to the EU Control Plane
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-To use Mule Runtime within the EU control plane, you must redefine the configuration properties that enable Mule Runtime to point to the EU control plane. You must also provide the client ID and client secret of the environment belonging to your organization.
+To use Mule runtime engine within the EU Control Plane, you must redefine the configuration properties that enable Mule runtime engine to point to the EU Control Plane. You must also provide the client ID and client secret of the environment belonging to your organization.
 
-By default, the Mule Runtime is configured to point to the US control plane. If you do not override these properties, the API Gateway capability of the Mule Runtime is disabled in the EU control plane.
+By default, Mule runtime engine is configured to point to the US control plane. If you do not override these properties, the API Gateway capability of Mule runtime engine is disabled in the EU Control Plane.
 
-The properties you must override depend on the version of the Mule Runtime you are using, as described in the following sections.
+The properties you must override depend on the version of Mule runtime engine you are using, as described in the following sections.
 
-== Configuring Mule Runtime 4.0
+== Configuring Mule 4.0
 
 === wrapper.conf
 
-To configure Mule Runtime using the `wrapper.conf` file, modify the following properties:
+To configure Mule runtime engine using the `wrapper.conf` file, modify the following properties:
 
 ----
 wrapper.java.additional.<n>=-Danypoint.platform.client_id=<environment client ID>
@@ -26,7 +26,7 @@ In the previous example, replace `<n>` with an integer value that is unique with
 
 === Command Line
 
-To configure Mule Runtime from the command line, use the following options when starting the Mule Runtime. Note that `./` only applies to Unix environments.
+To configure Mule runtime engine from the command line, use the following options when starting Mule runtime engine. Note that `./` only applies to Unix environments.
 
 ----
 ./mule -M-Danypoint.platform.client_id=<environment client ID> -M-
@@ -45,7 +45,7 @@ anypoint.platform.base_uri=https://eu1.anypoint.mulesoft.com
 anypoint.platform.analytics_base_uri=https://analytics-ingest.eu1.anypoint.mulesoft.com
 ----
 
-== Configuring Mule Runtime 3.x
+== Configuring Mule 3.x
 
 === wrapper.conf
 
@@ -64,7 +64,7 @@ In the previous example, replace `<n>` with an integer value that is unique with
 
 === Command Line
 
-To configure Mule Runtime from the command line, use the following options when starting the Mule Runtime. Note that `./` only applies to Unix environments.
+To configure Mule runtime engine from the command line, use the following options when starting Mule runtime engine. Note that `./` only applies to Unix environments.
 
 ----
 ./mule -M-Danypoint.platform.client_id=<org client ID> -M-
