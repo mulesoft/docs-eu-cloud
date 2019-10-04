@@ -5,11 +5,13 @@ endif::[]
 
 To use Mule runtime engine within the EU Control Plane, you must redefine the configuration properties that enable Mule runtime engine to point to the EU Control Plane. You must also provide the client ID and client secret of the environment belonging to your organization.
 
-By default, Mule runtime engine is configured to point to the US control plane. If you do not override these properties, the API Gateway capability of Mule runtime engine is disabled in the EU Control Plane.
+By default, Mule runtime engine is configured to point to the US control plane. If you do not override these properties, the API gateway capability of Mule runtime engine is disabled in the EU Control Plane.
 
 The properties you must override depend on the version of Mule runtime engine you are using: Mule 4.0 or Mule 3.x.
 
 == Configuring Mule 4.0
+
+You can configure Mule runtime engine (Mule) using `wrapper.conf`, the command line, or CloudHub.
 
 === wrapper.conf
 
@@ -21,8 +23,6 @@ wrapper.java.additional.<n>=-Danypoint.platform.client_secret=<environment clien
 wrapper.java.additional.<n>=-Danypoint.platform.base_uri=https://eu1.anypoint.mulesoft.com
 wrapper.java.additional.<n>=-Danypoint.platform.analytics_base_uri=https://analytics-ingest.eu1.anypoint.mulesoft.com
 ----
-
-In the previous example, replace `<n>` with an integer value that is unique within the `wrapper.conf` file.
 
 === Command Line
 
@@ -47,9 +47,11 @@ anypoint.platform.analytics_base_uri=https://analytics-ingest.eu1.anypoint.mules
 
 == Configuring Mule 3.x
 
+You can configure Mule runtime engine (Mule) using `wrapper.conf`, the command line, or CloudHub.
+
 === wrapper.conf
 
-To configure `wrapper.conf` file, modify the following properties:
+To configure `wrapper.conf` file, modify the following properties, replacing `<n>` with an integer value that is unique within `wrapper.conf`:
 
 ----
 wrapper.java.additional.<n>=-Danypoint.platform.client_id=<environment client ID>
@@ -59,8 +61,6 @@ wrapper.java.additional.<n>=-Danypoint.platform.coreservice_base_uri=https://eu1
 wrapper.java.additional.<n>=-Danypoint.platform.contracts_base_uri=https://eu1.anypoint.mulesoft.com/apigateway/ccs
 wrapper.java.additional.<n>=-Danypoint.platform.analytics_base_uri=https://analytics-ingest.eu1.anypoint.mulesoft.com
 ----
-
-In the previous example, replace `<n>` with an integer value that is unique within the `wrapper.conf` file.
 
 === Command Line
 
@@ -87,4 +87,4 @@ anypoint.platform.analytics_base_uri=https://analytics-ingest.eu1.anypoint.mules
 == See Also
 
 * xref:index.adoc[EU Control Plane]
-* xref:platform-access-eu.adoc[To Access the EU Control Plane]
+* xref:platform-access-eu.adoc[Access the EU Control Plane]
