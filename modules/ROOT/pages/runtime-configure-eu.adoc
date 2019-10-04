@@ -7,7 +7,7 @@ To use Mule runtime engine within the EU Control Plane, you must redefine the co
 
 By default, Mule runtime engine is configured to point to the US control plane. If you do not override these properties, the API Gateway capability of Mule runtime engine is disabled in the EU Control Plane.
 
-The properties you must override depend on the version of Mule runtime engine you are using, as described in the following sections.
+The properties you must override depend on the version of Mule runtime engine you are using: Mule 4.0 or Mule 3.x.
 
 == Configuring Mule 4.0
 
