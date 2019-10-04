@@ -1,4 +1,4 @@
-= Configure Mule runtime engine to Connect to the EU Control Plane
+= Configure Mule to Connect to the EU Control Plane
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
