@@ -13,7 +13,7 @@ The properties you must override depend on the version of Mule runtime engine yo
 
 === wrapper.conf
 
-To configure Mule runtime engine using the `wrapper.conf` file, modify the following properties:
+To configure Mule runtime engine using the `wrapper.conf` file, modify the following properties, replacing `<n>` with an integer value that is unique within `wrapper.conf`:
 
 ----
 wrapper.java.additional.<n>=-Danypoint.platform.client_id=<environment client ID>
