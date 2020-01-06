@@ -40,8 +40,8 @@ There are two Static IPs that needs to be whitelisted to access the mule-manager
 [%header,cols="2*a"]
 |===
 |Name |IP Address
-|*mule-manager.anypoint.mulesoft.com* |18.195.19.18
-|*mule-manager.anypoint.mulesoft.com* |18.194.245.32
+|*mule-manager.eu1.anypoint.mulesoft.com* |18.195.19.18
+|*mule-manager.eu1.anypoint.mulesoft.com* |18.194.245.32
 |===
 
 *Dynamic IPs*
