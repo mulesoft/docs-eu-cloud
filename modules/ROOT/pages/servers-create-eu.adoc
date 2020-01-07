@@ -22,7 +22,7 @@ In your network, you might need to whitelist ports, IP Addresses, and hostnames 
 
 For EU Control Plane, you must whitelist the following ports, IP addresses, and hostnames:
 
-*Ports*
+=== Ports
 
 [%header,cols="2*a"]
 |===
@@ -34,7 +34,7 @@ For EU Control Plane, you must whitelist the following ports, IP addresses, and 
 |*runtime-manager.eu1.anypoint.mulesoft.com* | 443
 |===
 
-*Static IP Addresses*
+=== Static IP Addresses
 
 There are two static IP addresses that must be whitelisted to access the `mule-manager.eu1.anypoint.mulesoft.com` hostname:
 
@@ -45,13 +45,15 @@ There are two static IP addresses that must be whitelisted to access the `mule-m
 |*mule-manager.eu1.anypoint.mulesoft.com* |18.194.245.32
 |===
 
-*Dynamic IPs*
+=== Dynamic IPs
 
 Some IP addresses used by Anypoint services are automatically assigned by the underlying cloud infrastructure, and therefore, might change in the future. For this reason, you should not implement a whitelist based on a specific IP address assigned to Anypoint services.
 
+=== Hostnames for Layer 7 Firewall Rules
+
 Many firewall devices allow you to define Layer 7 Firewall Rules, in which you can filter by destination name or application type.
 
-Include the following hostnames in your Layer 7 Firewall rules:
+Include the following hostnames in your Layer 7 firewall rules:
 
 [%header,cols="1*a"]
 |===
