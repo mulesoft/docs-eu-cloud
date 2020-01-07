@@ -16,7 +16,53 @@ The procedures for creating a server are similar to those for creating a server 
 
 This flag ensures that the server connects to Runtime Manager in the EU control plane. When you click Add Server in the  Runtime Manager > Servers tab, Runtime Manager in the EU control plane automatically inserts this flag in the generated script.
 
+== Ports, IP Addresses, and Hostnames to Whitelist
+
+In your network, you might need to whitelist ports, IP Addresses, and hostnames of various parts of the Anypoint Platform to allow the Runtime Manager Agent in a customer-hosted Mule runtime to communicate with MuleSoft-managed Anypoint Platform APIs and services. See xref:runtime-manager::rtm-agent-whitelists.adoc[Ports, IP Addresses, and Hostnames to Whitelist] section of the To Install and Configure the Runtime Manager Agent documentation for general information.
+
+For EU Control Plane, you must whitelist the following ports, IP addresses, and hostnames:
+
+=== Ports
+[%header,cols="2*a"]
+|===
+|Name |Port
+|*eu1.anypoint.mulesoft.com* | 443
+|*mule-manager.eu1.anypoint.mulesoft.com* | 443
+|*analytics-ingest.eu1.anypoint.mulesoft.com* |  443
+|*arm-auth-proxy.prod-eu.msap.io* |  443
+|*runtime-manager.eu1.anypoint.mulesoft.com* | 443
+|===
+
+=== Static IP Addresses
+There are two static IP addresses that must be whitelisted to access the `mule-manager.eu1.anypoint.mulesoft.com` hostname:
+
+[%header,cols="2*a"]
+|===
+|Name |IP Address
+|*mule-manager.eu1.anypoint.mulesoft.com* |18.195.19.18
+|*mule-manager.eu1.anypoint.mulesoft.com* |18.194.245.32
+|===
+
+=== Dynamic IP Addresses
+Some IP addresses used by Anypoint services are automatically assigned by the underlying cloud infrastructure, and therefore, might change in the future. For this reason, you should not implement a whitelist based on a specific IP address assigned to Anypoint services.
+
+=== Hostnames for Layer 7 Firewall Rules
+Many firewall devices allow you to define Layer 7 Firewall Rules, in which you can filter by destination name or application type.
+
+Include the following hostnames in your Layer 7 firewall rules:
+
+[%header,cols="1*a"]
+|===
+|Hostname
+|*eu1.anypoint.mulesoft.com* 
+|*analytics-ingest.eu1.anypoint.mulesoft.com*
+|*arm-auth-proxy.prod-eu.msap.io*
+|*runtime-manager.eu1.anypoint.mulesoft.com*
+|===
+
+
 == See Also
 
 * xref:runtime-manager::servers-create.adoc[To Create a Server in Runtime Manager (Hybrid)]
+* xref:runtime-manager::installing-and-configuring-runtime-manager-agent.adoc[To Install and Configure the Runtime Manager Agent documentation]
 * xref:platform-access-eu.adoc[To Access the EU Control Plane]
