@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 
 You can configure your Anypoint Studio installation to point to the EU control plane. +
-This task is available since Aynpoint Studio 6.4 Update Site 2.
+This task is available since Anypoint Studio 6.4 Update Site 2.
 
 . Go to Anypoint Studio in your top navigation bar, then click Preferences.
 . Expand Anypoint Studio in the left navigation bar, then select Region.
