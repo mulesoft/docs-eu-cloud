@@ -24,6 +24,7 @@ For EU Control Plane, you must whitelist the following ports, IP addresses, and 
 
 === Ports
 [%header,cols="2*a"]
+.Ports, IP Addresses, and Hostnames to Whitelist
 |===
 |Name |Port
 |*eu1.anypoint.mulesoft.com* | 443
@@ -37,6 +38,7 @@ For EU Control Plane, you must whitelist the following ports, IP addresses, and 
 There are two static IP addresses that must be whitelisted to access the `mule-manager.eu1.anypoint.mulesoft.com` hostname:
 
 [%header,cols="2*a"]
+.Static IP Addresses to Whitelist
 |===
 |Name |IP Address
 |*mule-manager.eu1.anypoint.mulesoft.com* |18.195.19.18
@@ -52,6 +54,7 @@ Many firewall devices allow you to define Layer 7 Firewall Rules, in which you c
 Include the following hostnames in your Layer 7 firewall rules:
 
 [%header,cols="1*a"]
+.Hostnames to Include in Layer 7 Firewall Rules
 |===
 |Hostname
 |*eu1.anypoint.mulesoft.com* 
