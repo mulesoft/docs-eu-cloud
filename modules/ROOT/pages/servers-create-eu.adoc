@@ -16,15 +16,15 @@ The procedures for creating a server are similar to those for creating a server 
 
 This flag ensures that the server connects to Runtime Manager in the EU control plane. When you click Add Server in the  Runtime Manager > Servers tab, Runtime Manager in the EU control plane automatically inserts this flag in the generated script.
 
-== Ports, IP Addresses, and Hostnames to Whitelist
+== Ports, IP Addresses, and Hostnames to Allowlist
 
-In your network, you might need to whitelist ports, IP Addresses, and hostnames of various parts of the Anypoint Platform to allow the Runtime Manager Agent in a customer-hosted Mule runtime to communicate with MuleSoft-managed Anypoint Platform APIs and services. See xref:runtime-manager::rtm-agent-whitelists.adoc[Ports, IP Addresses, and Hostnames to Whitelist] section of the To Install and Configure the Runtime Manager Agent documentation for general information.
+In your network, you might need to allowlist ports, IP Addresses, and hostnames of various parts of the Anypoint Platform to allow the Runtime Manager Agent in a customer-hosted Mule runtime to communicate with MuleSoft-managed Anypoint Platform APIs and services. See xref:runtime-manager::rtm-agent-whitelists.adoc[Ports, IP Addresses, and Hostnames to Allowlist] section of the To Install and Configure the Runtime Manager Agent documentation for general information.
 
-For EU Control Plane, you must whitelist the following ports, IP addresses, and hostnames:
+For EU Control Plane, you must allowlist the following ports, IP addresses, and hostnames:
 
 === Ports
 [%header,cols="2*a"]
-.Ports, IP Addresses, and Hostnames to Whitelist
+.Ports, IP Addresses, and Hostnames to Allowlist
 |===
 |Name |Port
 |*eu1.anypoint.mulesoft.com* | 443
@@ -35,10 +35,10 @@ For EU Control Plane, you must whitelist the following ports, IP addresses, and 
 |===
 
 === Static IP Addresses
-There are two static IP addresses that must be whitelisted to access the `mule-manager.eu1.anypoint.mulesoft.com` hostname:
+There are two static IP addresses that must be allowlisted to access the `mule-manager.eu1.anypoint.mulesoft.com` hostname:
 
 [%header,cols="2*a"]
-.Static IP Addresses to Whitelist
+.Static IP Addresses to Allowlist
 |===
 |Name |IP Address
 |*mule-manager.eu1.anypoint.mulesoft.com* |18.195.19.18
@@ -46,7 +46,7 @@ There are two static IP addresses that must be whitelisted to access the `mule-m
 |===
 
 === Dynamic IP Addresses
-Some IP addresses used by Anypoint services are automatically assigned by the underlying cloud infrastructure, and therefore, might change in the future. For this reason, you should not implement a whitelist based on a specific IP address assigned to Anypoint services.
+Some IP addresses used by Anypoint services are automatically assigned by the underlying cloud infrastructure, and therefore, might change in the future. For this reason, you should not implement an allowlist based on a specific IP address assigned to Anypoint services.
 
 === Hostnames for Layer 7 Firewall Rules
 Many firewall devices allow you to define Layer 7 Firewall Rules, in which you can filter by destination name or application type.
