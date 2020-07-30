@@ -35,7 +35,7 @@ For EU Control Plane, you must allowlist the following ports, IP addresses, and 
 |===
 
 === Static IP Addresses
-There are two static IP addresses that must be allowlisted to access the `mule-manager.eu1.anypoint.mulesoft.com` hostname:
+There are two static IP addresses that must be allowed to access the `mule-manager.eu1.anypoint.mulesoft.com` hostname:
 
 [%header,cols="2*a"]
 .Static IP Addresses to Allowlist
