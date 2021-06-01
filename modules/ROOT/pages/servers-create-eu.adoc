@@ -18,7 +18,7 @@ This flag ensures that the server connects to Runtime Manager in the EU control 
 
 == Ports, IP Addresses, and Hostnames to Allowlist
 
-In your network, you might need to allowlist ports, IP Addresses, and hostnames of various parts of the Anypoint Platform to allow the Runtime Manager Agent in a customer-hosted Mule runtime to communicate with MuleSoft-managed Anypoint Platform APIs and services. See xref:runtime-manager::rtm-agent-whitelists.adoc[Ports, IP Addresses, and Hostnames to Allowlist] section of the To Install and Configure the Runtime Manager Agent documentation for general information.
+In your network, you might need to allowlist ports, IP Addresses, and hostnames of various parts of the Anypoint Platform to allow the Runtime Manager Agent in a customer-hosted Mule runtime to communicate with MuleSoft-managed Anypoint Platform APIs and services. See xref:runtime-manager::rtm-agent-allowlists.adoc[Ports, IP Addresses, and Hostnames to Allowlist] section of the To Install and Configure the Runtime Manager Agent documentation for general information.
 
 For EU Control Plane, you must allowlist the following ports, IP addresses, and hostnames:
 
