@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-MuleSoft hosts a version of the Anypoint Platform control plane entirely within the EU (Frankfurt or Dublin data centers). This enables you to deploy and manage your APIs, applications, and related data entirely within the European Union. This includes data and metadata about your MuleSoft implementation. The EU control plane ensures that all MuleSoft data is stored within the EU.
+MuleSoft hosts a version of the Anypoint Platform control plane entirely within the EU (Frankfurt or Dublin data centers). This enables you to deploy and manage your APIs, applications, and related data entirely within the European Union. This includes data and metadata about your MuleSoft implementation.
 
 In addition to the EU control plane, deployment targets for MuleSoft managed runtimes are also hosted in the EU data center. Having both the control and runtime planes entirely within the EU enables you to more effectively meet emerging regulatory requirements.
 
