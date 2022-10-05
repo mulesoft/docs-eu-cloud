@@ -10,7 +10,7 @@ This task is available since Anypoint Studio 6.4 Update Site 2.
 . Expand Anypoint Studio in the left navigation bar, then select Region.
 . Select the EU option from the region dropdown menu. +
 Additionally you can select the Other option from dropdown menu if your region is not listed. +
-When selecting Other, you must provide the prefix for the region and the master org key for that region.
+When selecting Other, you must provide the prefix for the region and the root org key for that region.
 . Click OK.
 
 All Anypoint Platform tools embedded in Anypoint Studio display your Anypoint Platform from the EU Control plane. +
