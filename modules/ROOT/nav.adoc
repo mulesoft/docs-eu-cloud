@@ -1,5 +1,5 @@
 .xref:index.adoc[EU Control Plane]
-* xref:index.adoc[About EU Control Plane]
+* xref:index.adoc[EU Control Plane Overview]
 * xref:platform-access-eu.adoc[To Access the EU Control Plane]
 * xref:app-deploy-eu.adoc[To Deploy an Application (EU Control Plane)]
 * xref:servers-create-eu.adoc[To Create a Server (EU Control Plane)]

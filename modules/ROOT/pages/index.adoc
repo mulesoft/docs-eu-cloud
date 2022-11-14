@@ -1,4 +1,4 @@
-= About the EU Control Plane
+= EU Control Plane Overview
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
