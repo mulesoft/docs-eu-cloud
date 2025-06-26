@@ -28,22 +28,10 @@ For EU Control Plane, you must allowlist the following ports, IP addresses, and 
 |===
 |Name |Port
 |*eu1.anypoint.mulesoft.com* | 443
-|*mule-manager.eu1.anypoint.mulesoft.com* | 443
 |*analytics-ingest.eu1.anypoint.mulesoft.com* |  443
-|*arm-auth-proxy.prod-eu.msap.io* |  443
 |*runtime-manager.eu1.anypoint.mulesoft.com* | 443
 |===
 
-=== Static IP Addresses
-There are two static IP addresses that must be allowed to access the `mule-manager.eu1.anypoint.mulesoft.com` hostname:
-
-[%header,cols="2*a"]
-.Static IP Addresses to Allowlist
-|===
-|Name |IP Address
-|*mule-manager.eu1.anypoint.mulesoft.com* |18.195.19.18
-|*mule-manager.eu1.anypoint.mulesoft.com* |18.194.245.32
-|===
 
 === Dynamic IP Addresses
 Some IP addresses used by Anypoint services are automatically assigned by the underlying cloud infrastructure, and therefore, might change in the future. For this reason, you should not implement an allowlist based on a specific IP address assigned to Anypoint services.
@@ -59,7 +47,6 @@ Include the following hostnames in your Layer 7 firewall rules:
 |Hostname
 |*eu1.anypoint.mulesoft.com* 
 |*analytics-ingest.eu1.anypoint.mulesoft.com*
-|*arm-auth-proxy.prod-eu.msap.io*
 |*runtime-manager.eu1.anypoint.mulesoft.com*
 |===
 
